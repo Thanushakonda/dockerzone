@@ -13,5 +13,6 @@ LABEL author="chinnu"
 EXPOSE 5000
 COPY --from=downloader /nopCommerce /nopCommerce
 ENV ASPNETCORE_URLS="http://0.0.0.0:5000"
+EXPOSE 5000
 WORKDIR /nopcommerce
 CMD ["dotnet", "nop.web.dll"]
